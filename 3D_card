@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <style>
+     .scene {
+       margin:auto;
+       align-item:center;
+       border:2px solid black;
+       perspective: 1000px;
+       width: 200px;
+       height: 300px;
+}
+
+.card {
+  border:2px solid black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+    
+.back {
+  transform: rotateY(180deg);
+
+
+
+  </style>
+</head>
+<body>
+  <div class="scene">
+   <div class="card">
+     <div class="front">
+        
+       
+       <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDhg_LVguSFQtfFUiamLENJ_4X4n5ZufUEg&s" alt="image" style="width: 100%; height:100% ;object-fit: cover">
+       
+     </div>
+     <div class="back">
+       <img src ="https://images.pexels.com/photos/86596/owl-bird-eyes-eagle-owl-86596.jpeg?cs=srgb&dl=pexels-pixabay-86596.jpg&fm=jpg" alt="image"  style  ="width:100%;  height:100%; object-fit:cover">
+     </div>
+  </div>
+  </div>     
+</body>
+</html>
